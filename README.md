@@ -1,9 +1,10 @@
-# Functional browser
-Because writing `new SomeConstructor()` is *imperative colonialism* and we’re not about that life.
+# Functional browser ![ts](https://flat.badgen.net/badge/-/TypeScript?icon=typescript&label&labelColor=blue&color=555555) ![Tree-shakeable](https://flat.badgen.net/badge/tree-shakeable/yes/green) ![ts](https://flat.badgen.net/badge/dependencies/0?labelColor=blue&color=555555)
+
+Because writing `new SomeConstructor()` is *a hate crime* and we’re not about that.
 
 ## What is this?
 A collection of **factory functions** for **literally every built-in browser constructor**.
-No instantiation logic, no clever wrapping — just pure, functional abstraction for your architecture diagrams.
+No instantiation logic, no clever wrapping... just pure, functional abstractions for your architecture diagrams.
 
 ### Example:
 
@@ -18,17 +19,17 @@ Yeah. That’s it. It’s just `new AbortController()` — but with more ceremon
 ---
 
 ## Why tho?
-I noticed functional programmers get *real* squirmy when they see `new` anywhere in their perfect functional codebase. You say “constructor,” they say “side-effect.”
+I noticed functional programmers get *real* squirmy when they see `new` anywhere in their perfect formed functional codebase and typically wrap things anyway. 
+You say “constructor,” they say “side-effect.”
 
 So this library exists for:
 * devs who want *all the things* as pure functions
-* synergy people
 * people who think factory methods are somehow cleaner than the thing they wrap
 
 ---
 
 ## What’s included?
-Every browser global constructor wrapped in a multiple function names, so your all your factories cab align with what ever naming paradigm you have chosen this week
+Every browser global constructor is wrapped in multiple function names, so your factories can align with whatever naming convention you’re chasing this week.
 
 ```ts
 createAbortController()
@@ -67,7 +68,7 @@ const socket = constructWebSocket('wss://echo.websocket.org');
 
 These are just... `new ImageBitmap(...)`, `new AudioContext()` and `new WebSocket(...)` under the hood.
 
-But *your code looks more functional now*. Your tech lead might cry tears of joy. Or fire you. Who knows?
+But *your code looks more functional now*. Wow, you did it.
 
 ---
 
@@ -76,21 +77,13 @@ But *your code looks more functional now*. Your tech lead might cry tears of joy
 Yes. Every constructor wrapper is its own export. If your bundler pulls in the whole thing, that’s your fault.
 
 ---
-
-## Why does this exist?
-
-> Because someone has to lean in and say:
-> *“Functional programming is just object-oriented programming with commitment issues.”*
-Also, it’s kinda nice for mocking in tests. But mostly it’s a meme.
-
----
-## 💬 FAQ
+## FAQ
 
 **Q: Why so many names for the same factory?**
-A: Autocomplete theater. Also, `spawn` sounds cool.
+A: Autocomplete theater and function name flexibility. Also, `spawn` sounds cool. 
 
 **Q: Will you add `initializeAbortControllerInstanceFactoryObject()`?**
-A: Yeah probably.
+A: Yeah probably. 
 
 **Q: Is this tree-shakeable?**
 A: Scroll up, bro.
@@ -102,5 +95,4 @@ A: Yes.
 
 ## Shoutout
 Thanks to the functional bros for constantly reminding us that anything wrapped in a function is “better” — even when it’s just `new Foo()` inside.
-
 You're the reason this package exists. This one’s for you.
