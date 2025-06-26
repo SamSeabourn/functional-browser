@@ -1,0 +1,9 @@
+/node_modules
+/src
+.DS_STORE
+.env
+.gitignore
+.prettierrc
+eslint.config.js
+tsup.config.ts
+tsconfig.json
